@@ -2,14 +2,13 @@
   "name": "relativapp",
   "version": "0.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "relativapp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "author": "Sylvain Garant",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.8.2",
-    "express": "^4.16.2"
+    "electron": "^1.8.2"
   }
 }
