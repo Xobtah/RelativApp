@@ -3,9 +3,9 @@
 **  Website: https://github.com/Xobtah
 */
 
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-const url = require('url');
+let { app, BrowserWindow } = require('electron');
+let path = require('path');
+let url = require('url');
 
 let win = null;
 
@@ -40,4 +40,5 @@ app.on('activate', () => {
         createWindow();
 });
 
-require('./server');
+//require('./server');
+require('./server/ipc');

@@ -9,6 +9,9 @@
   "author": "Sylvain Garant",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.8.2"
+    "avrgirl-arduino": "^2.2.9",
+    "electron": "^1.8.2",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1"
   }
 }

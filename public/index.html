@@ -3,8 +3,78 @@
     <head>
         <meta charset="utf-8">
         <title>RelativApp</title>
+
+        <!-- jQuery -->
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+        <script>
+            window.$ = window.jQuery = require('jquery');
+            require('hammerjs');
+        </script>
+
+        <!-- Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <!-- RelativApp -->
+        <script src="js/main.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/main.css">
+
     </head>
     <body>
-        Welcome to the RelativApp.
+        <nav>
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo">RelativApp</a>
+            </div>
+        </nav>
+        <center>
+            <h4>Select your Arduino type:</h4>
+            <form action="#">
+                <p>
+                    <input name="arduinoType" type="radio" id="uno">
+                    <label for="uno">Uno</label>
+                </p>
+                <p>
+                    <input name="arduinoType" type="radio" id="nano" checked="1">
+                    <label for="nano">Nano</label>
+                </p>
+                <p>
+                    <input name="arduinoType" type="radio" id="mega">
+                    <label for="mega">Mega</label>
+                </p>
+            </form>
+
+            <!--<div class="input-field col s12">
+                <select id="arduinoType">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="nano" selected>Nano</option>
+                    <option value="uno">Uno</option>
+                    <option value="mega">Mega</option>
+                </select>
+                <label>Select your Adruino board</label>
+            </div>-->
+
+            <!--<center style="margin-top: 25%">
+                <h3>Checking for updates...</h3>
+                <br>
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                            <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </center>-->
+
+            <br><br><br>
+            <button class="btn btn-large waves-effect waves-light" onclick="buttonPush()" id="uploadButton">Upload
+                <i class="material-icons right">send</i>
+            </button>
+        </center>
     </body>
 </html>
