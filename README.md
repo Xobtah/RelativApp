@@ -10,3 +10,5 @@ Application for the Open Source VR project Relativ
 > npm i
 
 > npm start
+
+![Image](doc/img/img.png)
